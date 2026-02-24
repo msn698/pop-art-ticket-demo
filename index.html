@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POPICON 2026 — Ticket Experience Demo</title>
+  <meta name="description" content="Client-ready ticket page demo inspired by bold pop-art interaction." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">POPICON</div>
+    <a class="btn ghost" href="#tickets">Get Tickets</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <p class="badge">Prague • 2026 • Pop Art Exhibition</p>
+      <h1>4 FACES, 1 ICONIC LEGEND.</h1>
+      <p class="sub">A client-ready demo ticket page with bold visuals, animated counters, and fast checkout flow.</p>
+      <a class="btn" href="#tickets">Book Your Pass</a>
+    </div>
+    <div class="hero-card reveal delay-1">
+      <div class="stat"><span id="visitors">0</span><small>Expected visitors</small></div>
+      <div class="stat"><span id="days">0</span><small>Exhibition days</small></div>
+      <div class="stat"><span id="spots">0</span><small>VIP spots left</small></div>
+    </div>
+  </section>
+
+  <section class="ticker-wrap">
+    <div class="ticker">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</div>
+  </section>
+
+  <section id="tickets" class="tickets">
+    <h2>Choose Your Ticket</h2>
+    <div class="cards" id="ticketCards"></div>
+
+    <div class="checkout">
+      <div>
+        <h3>Order Summary</h3>
+        <div id="summary">No tickets selected.</div>
+      </div>
+      <div class="totals">
+        <p>Total: <strong id="total">AED 0</strong></p>
+        <button id="waCheckout" class="btn" type="button">Checkout via WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Demo by Mohammed Saeed · <a href="https://msaeed.tech" target="_blank" rel="noopener noreferrer">msaeed.tech</a></p>
+    <small>Original design concept inspired by Awwwards/Webflow example; this implementation is custom-coded for demo purposes.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
