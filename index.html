@@ -27,8 +27,19 @@
     </div>
   </section>
 
-  <section class="ticker-wrap">
-    <div class="ticker">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</div>
+  <section class="ticker-wrap" aria-label="Live exhibition updates">
+    <div class="ticker-row">
+      <div class="ticker-track ticker-track-left">
+        <span>POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</span>
+        <span aria-hidden="true">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</span>
+      </div>
+    </div>
+    <div class="ticker-row">
+      <div class="ticker-track ticker-track-right">
+        <span>BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</span>
+        <span aria-hidden="true">BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</span>
+      </div>
+    </div>
   </section>
 
   <section id="tickets" class="tickets">
@@ -47,9 +58,39 @@
     </div>
   </section>
 
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Want this style adapted to your brand? Send a quick brief.</p>
+    <form id="contactForm" class="contact-form">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Tell us what you need"></textarea>
+      </div>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="redirectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <h3 id="modalTitle">Thanks! Redirecting you…</h3>
+      <p>You’ll now be sent to <strong>msaeed.tech</strong> to continue.</p>
+      <div class="modal-actions">
+        <button id="goNow" class="btn" type="button">Go now</button>
+        <button id="cancelRedirect" class="btn ghost" type="button">Stay here</button>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <p>Demo by Mohammed Saeed · <a href="https://msaeed.tech" target="_blank" rel="noopener noreferrer">msaeed.tech</a></p>
-    <small>Original design concept inspired by Awwwards/Webflow example; this implementation is custom-coded for demo purposes.</small>
   </footer>
 
   <script src="script.js"></script>
