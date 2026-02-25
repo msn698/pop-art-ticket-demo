@@ -29,15 +29,15 @@
 
   <section class="ticker-wrap" aria-label="Live exhibition updates">
     <div class="ticker-row">
-      <div class="ticker-track ticker-track-left">
-        <span>POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</span>
-        <span aria-hidden="true">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</span>
+      <div class="ticker-marquee ticker-left">
+        <p class="ticker-content">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</p>
+        <p class="ticker-content" aria-hidden="true">POP ART • EXHIBITION • TICKETS • CULTURE CLASH • BOLD COLORS • LIMITED VIP • BOOK NOW •</p>
       </div>
     </div>
     <div class="ticker-row">
-      <div class="ticker-track ticker-track-right">
-        <span>BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</span>
-        <span aria-hidden="true">BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</span>
+      <div class="ticker-marquee ticker-right">
+        <p class="ticker-content">BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</p>
+        <p class="ticker-content" aria-hidden="true">BOOK NOW • LIMITED VIP • BOLD COLORS • CULTURE CLASH • TICKETS • EXHIBITION • POP ART •</p>
       </div>
     </div>
   </section>
@@ -59,23 +59,51 @@
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Want this style adapted to your brand? Send a quick brief.</p>
-    <form id="contactForm" class="contact-form">
-      <div class="field">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required placeholder="Your name" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Tell us what you need"></textarea>
-      </div>
-      <button class="btn" type="submit">Submit</button>
-    </form>
+    <div class="contact-shell">
+      <aside class="contact-copy">
+        <p class="contact-kicker">LET’S BUILD YOUR VERSION</p>
+        <h2>Contact Us</h2>
+        <p>Share your business type + style direction and I’ll shape this demo into your own launch-ready page.</p>
+        <ul class="contact-points">
+          <li>⚡ Fast turnaround</li>
+          <li>🎯 Conversion-focused UX</li>
+          <li>🧠 Unique style, not template vibes</li>
+        </ul>
+      </aside>
+
+      <form id="contactForm" class="contact-form">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="business">Business Type</label>
+            <input id="business" name="business" type="text" placeholder="Event, clinic, restaurant..." />
+          </div>
+          <div class="field">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="">Choose</option>
+              <option>Starter</option>
+              <option>Growth</option>
+              <option>Premium</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project Brief</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me what you want to build"></textarea>
+        </div>
+        <button class="btn" type="submit">Submit & Continue</button>
+      </form>
+    </div>
   </section>
 
   <div id="redirectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
